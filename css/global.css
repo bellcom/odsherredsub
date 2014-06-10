@@ -6,7 +6,8 @@
 	font-size: 14px;
 	font-style: italic;}
 	
-.node-type-os2web-borger-dk-article	.billede { margin-right: 10px}
+.node-type-os2web-borger-dk-article	.billede { margin-right: 10px; max-width: 50%}
+.node-type-os2web-borger-dk-article .billede img {max-width: 100%;}
 
 .borger_dk_header { padding: 10px;}
 
