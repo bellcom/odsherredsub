@@ -107,7 +107,14 @@
   <?php
     if (!empty($content['field_os2web_borger_dk_image'])) {
       print "<div class='billede'>";
-      print render($content['field_os2web_borger_dk_image']);
+      list($borger_image) = field_get_items('node', $node, 'field_os2web_borger_dk_image');
+
+      $style_array = array('path' => $borger_image['uri'], 'style_name' => 'indholdsside_alt');
+
+      $render_borger_image = theme('image_style', $style_array);
+
+      print $render_borger_image; 
+//     print render($content['field_os2web_borger_dk_image']);
       print "</div>";
       hide($content['field_os2web_borger_dk_image']);
     }
