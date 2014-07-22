@@ -190,7 +190,7 @@ h2 { font-size: 20px;}
 .ods-link { padding-top: 35px;}
 
 #region-sidebar-first ul.menu li {
-  background-image: none;
+  background-image: none !important;
   padding-left: 0px;
 }
 
@@ -240,9 +240,13 @@ padding-top: 10px ;}
     float: left;
     width: 50%;
 }
+h2.mArticle {
+  background-image: url("../../../modules/os2web_borger_dk/images/foldOut.png");
 
-#region-sidebar-first ul.menu li.expanded, 
-#region-sidebar-first ul.menu li ul li { background-image: none !important}
+}
+#zone-content #region-sidebar-first ul.menu li.expanded, 
+#zone-content #region-sidebar-first ul.menu li ul li,
+#zone-content #region-sidebar-first ul.menu li.leaf { background-image: none !important}
 
 .not-front .view-kontaktblok { margin-top: 20px; margin-left: 0px;}
 .not-front .view-kontaktblok .hbg { padding: 5px; height: 185px; margin-top: 1px;  }
@@ -251,7 +255,20 @@ padding-top: 10px ;}
 .views-slideshow-cycle-main-frame-row { height: 280px; width: 930px;}
 
 .borger_dk_header { padding: 10px;}
-
+.node-type-os2web-borger-dk-article #region-content .region-content-inner{
+  padding: 0px;
+}
+.panel-region-stack1 h3.pane-title {
+  font-size:25px;
+}
+.topborgerdk { width: 300px; height: 30px; float: right; position: absolute; top: 10px; right: 5px;}
+.not-front.node-type-os2web-borger-dk-article .panel-region-stack1 .panel-pane {
+   padding: 10px 5px 10px 5px;
+ }
+.not-front .panel-region-stack3 .panel-pane {
+  padding: 10px 5px 10px 10px;
+}
+.panel-display.panel-node { position: relative;}
 .view-id-seneste_ny .views-field-title { font-size: 14px; font-weight: bold;}
 
 #block-gtranslate-gtranslate .content { padding-left: 15px; padding-bottom: 15px; padding-top: 15px;}
