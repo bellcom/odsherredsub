@@ -219,7 +219,7 @@ h2 { font-size: 20px;}
   font-size: 10px;
 } 
 
-.front .pane-spotbokse { position: absolute; width: 212px; }
+.front .pane-spotbokse { width: 212px; }
 
 #toolbar a { color: #FFF !important}
 
